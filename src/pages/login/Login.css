@@ -1,0 +1,34 @@
+app-login {
+    
+}
+.btn-margin-right{
+    margin-right: 5px;
+
+}
+ion-grid {
+    width:100%;
+    height: 100%;
+    background: #dfdfdf;
+}
+
+ion-row {
+    height: 100%;
+}
+
+ion-col {
+    border: 1px solid #488aff;
+    background: #fff;
+}
+
+ion-button {
+    font-weight: 300;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+    ion-grid {
+        background: #fff;
+    }
+    ion-col {
+        border: none;
+    }
+}

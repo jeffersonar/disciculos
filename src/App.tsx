@@ -22,13 +22,15 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-
+import Tutorial from './pages/tutorial/Turorial';
+import Login from './pages/login/Login';
+/*<Route exact path="/home" render={() => <Redirect to="/home" />} /> */
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route path="/" component={Login} exact={true} />
+        <Route path="/login" component={Login}  />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
